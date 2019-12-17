@@ -4,5 +4,5 @@
 
 httpd_packages:
   - httpd
-  - mode_wsgi
+  - mod_wsgi
 
