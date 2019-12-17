@@ -1,0 +1,18 @@
+---
+
+- name: Deploy site-b
+  hosts: siteb
+  become: yes
+
+  tasks:
+  - name: Install docker prerequisites
+    pip:
+      name: docker
+
+  - name: Launch the apache-simple ontainer on the site-b nodes
+    docker_container:
+      name: apache-simple
+      image: quay.io/ddpalt/ansible-for-devops-siteb
+      ports:
+        - "8080:8080"
+
