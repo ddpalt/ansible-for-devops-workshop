@@ -1,7 +1,7 @@
 ---
 - name: deploy nginx load balancer
   hosts: lb
-  become: ys
+  become: yes
 
   tasks:
     - name: install docker prerequisites
