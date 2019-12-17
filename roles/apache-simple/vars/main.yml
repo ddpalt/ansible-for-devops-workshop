@@ -1,0 +1,8 @@
+---
+# vars file for apache-simple
+#
+
+httpd_packages:
+  - httpd
+  - mode_wsgi
+
